@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/vuelto.css">
+
+</head>
+<body>
+    <header>
+        <h1>VUELTO</h1>
+    </header>
+    <main>
+        <section class="container">
+          <form action="">
+             <label for="num">
+                <input type="number" id="num1" value="" placeholder="Ingrese cantidad del producto">
+             </label>
+             <label for="">                                                                                                                                                                                                                                        
+                <input type="number" id="num2"placeholder="Ingrese el costo del producto">
+             </label>
+             <label for="num">
+                <input type="number" id="num3" value="" placeholder="Ingrese pago">
+             </label>
+             <div class="checkbox-container">
+                <input type="checkbox" id="checkbox">
+                <span class="checkmark"></span>
+                <label class="checkbox-label" for="checkbox">Calcular IVA</label>
+              </div>
+
+             <div class="botones">
+                 <button type="button" class="boton" onClick="numero.vuelto()">Calcular</button>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                 <button type="button" class="boton" onclick="limpiar()">Limpiar</button>
+                 <button type="button" class="boton" onclick="numero.regresar()">regresar</button>
+                 
+             </div>
+             <div id="resp">
+                Respuesta
+             </div>
+          </form>
+ 
+        </section>
+      
+    </main>
+    <footer>
+        <h6>Todos los derechos reservados - Daniel Soft.</h6>
+    </footer>
+    <script>
+        function limpiar(){
+         document.getElementById("num1").value=""
+         document.getElementById("num2").value=""
+         document.getElementById("num3").value=""
+         document.getElementById("resp").textContent="Respuesta"
+    }
+    </script>
+
+    <script src="../../js/main.js" ></script>
+</body>
+</html>
